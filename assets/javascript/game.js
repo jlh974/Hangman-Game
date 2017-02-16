@@ -108,7 +108,10 @@ function roundComplete(){
     console.log(blanksAndSuccesses);
     if(lettersInChosenWord.join(" ") === blanksAndSuccesses.join(" ")){
         winCounter++;
-        alert("You win!!");
+        //alert("You win!!");
+        //$( function() {
+        //    $( "#dialog" ).dialog();
+        //} );
         document.getElementById('win-counter').innerHTML = winCounter;
         startGame();
     }else if(numGuesses === 0){
